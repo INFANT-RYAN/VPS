@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        Tb:["Montserret","Karla"]
+        Tb:["Montserret","Karla"],
+        nav:["Roboto"]
       }
     },
   },

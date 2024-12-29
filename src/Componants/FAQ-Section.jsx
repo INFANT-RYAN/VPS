@@ -48,7 +48,7 @@ export default function FAQ(){
         <h1 className="text-[#9874f2] text-sm font-Tb font-semibold">FAQ</h1> 
         <h2 className="text-3xl font-semibold ">Talk About <strong>Question ?</strong></h2>
     </center> 
-    <div className="px-14 mx-auto p-4 grid grid-rows-5 grid-flow-col w-3/4 "> 
+    <div className="px-14 mx-auto p-4 grid grid-rows-5 grid-flow-col overflow-hidden min-h-0 min-w-0 w-3/4 "> 
     {faqs.map((faq) => ( 
         <FaqAccordion className="w-[200px]" question={faq.question} answer={faq.answer} /> 
     ))

@@ -2,7 +2,7 @@ import hero from "../assets/hero.jpg"
 
 export default function Hero(){
     return(
-        <section className="flex items-center mx-auto container justify-center bg-[#f0f4ff]">
+        <section className="flex items-center mx-auto container justify-center bg-[#f0f4ff] pt-7">
             <div className="w-1/2 md:ps-14 flex flex-col justify-center gap-10">
                 <p className="text-[#9874f2]  font-bold">BEST MARKETTING SERVICE</p>
                 <p className="text-[#141d38] text-7xl font-bold">Make The Easiest Solution For You</p>

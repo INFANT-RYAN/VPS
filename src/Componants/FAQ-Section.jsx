@@ -43,9 +43,9 @@ const faqs = [
 ]; 
 export default function FAQ(){ 
     return( 
-        <section className="my-10">
+        <section className="my-10 font-barlow">
             <center className="space-y-4"> 
-            <h1 className="text-[#9874f2] text-sm font-Tb font-semibold">FAQ</h1> 
+            <h1 className="text-[#9874f2] text-sm font-semibold">FAQ</h1> 
             <h2 className="text-3xl font-semibold ">Talk About <strong>Question ?</strong></h2>
         </center> 
         <div className="flex w-3/4 mx-auto justify-center"> 

@@ -8,7 +8,8 @@ export default {
     extend: {
       fontFamily:{
         Tb:["Montserret","Karla"],
-        nav:["Roboto"]
+        nav:["Roboto"],
+        barlow:["Barlow"]
       }
     },
   },

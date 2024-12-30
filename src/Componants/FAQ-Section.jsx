@@ -43,17 +43,19 @@ const faqs = [
 ]; 
 export default function FAQ(){ 
     return( 
-    <section className="pt-10"> 
-    <center className="space-y-4"> 
-        <h1 className="text-[#9874f2] text-sm font-Tb font-semibold">FAQ</h1> 
-        <h2 className="text-3xl font-semibold ">Talk About <strong>Question ?</strong></h2>
-    </center> 
-    <div className="px-14 mx-auto p-4 grid grid-rows-5 grid-flow-col overflow-hidden min-h-0 min-w-0 w-3/4 "> 
-    {faqs.map((faq) => ( 
-        <FaqAccordion className="w-[200px]" question={faq.question} answer={faq.answer} /> 
-    ))
-    } 
-    </div> 
-    </section> 
+        <section className="my-10">
+            <center className="space-y-4"> 
+            <h1 className="text-[#9874f2] text-sm font-Tb font-semibold">FAQ</h1> 
+            <h2 className="text-3xl font-semibold ">Talk About <strong>Question ?</strong></h2>
+        </center> 
+        <div className="flex w-3/4 mx-auto justify-center"> 
+            <div className="w-1/2 p-4"> 
+                {faqs.slice(0, 5).map((accordion, index) => ( <FaqAccordion key={index} question={accordion.question} answer={accordion.answer} /> ))} 
+            </div> 
+            <div className="w-1/2 p-4"> 
+                {faqs.slice(5).map((accordion, index) => ( <FaqAccordion key={index} question={accordion.question} answer={accordion.answer} /> ))} 
+            </div> 
+        </div>
+        </section> 
     ); 
 }
